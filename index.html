@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BobLoopOS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+        <div class="loader-label">BobLoopOS</div>
+    </div>
+    <div class="terminal" id="login-screen">
+        <div class="screen">
+            <div class="output">BobLoopOS DEF Edition</div>
+            <div class="output">Please login to continue!</div>
+            <div class="input-line">
+                <span class="prompt">Username:</span>
+                <input type="text" id="username">
+            </div>
+            <div class="input-line">
+                <span class="prompt">Password:</span>
+                <input type="password" id="password">
+            </div>
+            <div class="input-line">
+                <button id="login-button">Login</button>
+            </div>
+        </div>
+    </div>
+    <div class="desktop-terminal" id="desktop-terminal">
+        <div class="screen">
+            <div class="output">Welcome, admin!</div>
+            <div class="output">Type 'help' to see available commands.</div>
+            <div class="input-line">
+                <span class="prompt">$</span>
+                <input type="text" id="terminal-input">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
